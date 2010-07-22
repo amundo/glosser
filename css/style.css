@@ -1,0 +1,100 @@
+body { 
+ font-family: Gentium;
+}
+
+table#rules {
+  border-top: 2px solid blue;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  margin: 2px;
+  width: 100px; 
+  float:left;
+}
+
+table#rules tr td {
+  border-bottom: 1px dotted gray;
+}
+
+table#rules tr td.inputKey {
+  font-family: monospace;
+  text-align: right;
+  padding-right: 4px;
+  border-right: 1px dotted gray;
+}
+
+table#rules tr td.outputLetter {
+  font-weight: bold;
+}
+
+#glosser { 
+  overflow:auto;
+  float:left;
+  padding: 4px;
+  width:600px;
+}
+
+#glosser input  {
+  width: 90%;
+  padding: 4px;
+  margin: 4px 0;
+  font-size: large;
+}
+
+#glosser input#before  {
+  border-top: 1px dashed #ccc; 
+  border-left: 1px dashed #ccc; 
+  border-right: 1px dashed #ccc; 
+  margin-bottom: 0; 
+  -moz-border-radius: .25em;
+  font-size: small;
+  font-family: Gentium;
+  color: gray;
+  margin-bottom: 0;
+}
+
+
+#glosser input#after {
+  margin-top: 0; 
+  font-family: Gentium;
+}
+
+#glosser input#gloss {
+  font-family: Gentium;
+}
+
+dl#lines { 
+  width: 40%;
+  float:right;
+  border-left: 1px solid black;
+  min-height: 500px;
+  padding-left: 1em;
+}
+
+dl#lines dt {
+
+}
+dl#lines dd {
+  font-style: italic;
+  margin-left: 0;
+}
+
+dl#lines dt:hover {
+  cursor: pointer;
+}
+
+#wordcount textarea#text {
+  float: left;
+  width: 60%; 
+  direction: rtl;
+  font-family: Gentium;
+  padding: 4px; 
+}
+
+#wordcount table { 
+  width: 25%;
+  float: right;
+}
+
+#wordcount table thead tr:hover { 
+  cursor: pointer; 
+}
