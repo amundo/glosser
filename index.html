@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>glosser</title>
+  <script type="text/javascript" src="../js/jquery.js"></script>
+  <script type="text/javascript" src="../js/ug_table.js"></script>
+  <script type="text/javascript" src="../js/translit.js"></script>
+<script> </script>
+  <meta charset="UTF-8">
+<link type="text/css" href="../css/style.css" rel="stylesheet" />
+<style type="text/css"> </style>
+<script>
+$(function(){
+ 
+  function saveLine(){
+    var after = $.trim($('#after').val());
+    var before = $.trim($('#before').val());
+
+    var $dt = $('<dt />', {
+      text: after
+    })
+   .attr('data-source', before)
+   .appendTo($('#lines'));
+
+    var $dd = $('<dd />',  {
+      text: $('#gloss').val()
+    })
+   .appendTo('#lines');
+
+    $('#before,#after,#gloss').val('');
+  }
+
+  $('#before, #after, #gloss').keyup(function(e){
+
+    if(e.which == 13){ // enter
+      saveLine();
+    }
+
+  })
+
+})
+</script>
+</head>
+<body id="transliterator">
+<div id="glosser">
+  <input tabindex="1" lang="ug" id="before"></input>
+  <input tabindex="3" lang="ug" id="after"></input>
+  <input tabindex="2" lang="en" id="gloss"></input>
+</div>
+
+<dl id="lines">
+</dl> <!-- #lines -->
+
+</body>
+
+</html>
+
