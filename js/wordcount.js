@@ -4,7 +4,7 @@ function depunctuate(text){
 
 function tokenize(text){
   var text = $.trim(text);
-  return text.split(' ');
+  return $.trim(text).split(' ');
 }
 
 function count_words(words){

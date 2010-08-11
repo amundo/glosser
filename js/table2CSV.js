@@ -50,6 +50,7 @@ jQuery.fn.table2CSV = function(options) {
             csvData[csvData.length] = mystr;
         }
     }
+
     function formatData(input) {
         // replace " with “
         var regexp = new RegExp(/["]/g);
@@ -60,6 +61,7 @@ jQuery.fn.table2CSV = function(options) {
         if (output == "") return '';
         return '"' + output + '"';
     }
+
     function popup(data) {
         var generator = window.open('', 'csv', 'height=400,width=600');
         generator.document.write('<html><head><title>CSV</title>');
@@ -72,3 +74,4 @@ jQuery.fn.table2CSV = function(options) {
         return true;
     }
 };
+
