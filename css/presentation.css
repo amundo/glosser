@@ -1,0 +1,158 @@
+/*gloss*/
+body { 
+  font-family: "Times New Roman"; 
+  counter-reset: example;
+}
+
+ol.sentence { 
+  list-style-type: none;
+  padding-left: none;
+  overflow:auto;
+  margin-below: 0;
+  padding-left: 0;
+}
+
+ol.sentence li.word { 
+  float:left;
+  margin-right: 1em;
+}
+
+ol.tiers { 
+  list-style-type: none;
+  overflow:auto;
+  padding-left: 0;
+}
+
+ol.tiers li { 
+
+}
+
+abbr { 
+  font-variant: small-caps; 
+  border-bottom: none; 
+}
+
+abbr:hover { 
+  cursor: pointer;
+}
+
+abbr.pos:before { 
+}
+
+.p { 
+}
+
+.m { 
+}
+
+.g { 
+  font-size: 80%;
+  margin: 0;
+}
+
+.t { 
+  font-style:italic;
+  margin: 0;
+}
+
+.t:before { 
+  content: '“';
+}
+
+.t:after { 
+  content: '”';
+}
+
+.c { 
+  margin: 0;
+  font-size: 80%;
+}
+
+.c:before { 
+  content: '☛ ';
+}
+
+.c:after { 
+}
+
+
+.m strong { 
+  font-weight: bold;
+  border-bottom: 2px dotted red;
+}
+.p strong { 
+  font-weight: bold;
+  border-bottom: 2px dotted red;
+}
+.line { 
+  font-size: x-large;
+  margin-left: 10em;
+  top: 1.5em;
+  padding: 1px 2px;
+}
+
+
+div.line:before {
+  content: "(" counter(example) ")" ;
+  counter-increment: example;
+  float:left;
+  margin-left: -2em;
+  position: relative;
+  top: 1em;
+}
+
+blockquote:before { 
+  content: '“';
+}
+
+blockquote { 
+  width: 30%;
+  margin-left: 25%;
+  line-height: 150%;
+  font-size: x-large; 
+  overflow: auto;
+}
+
+.cite { 
+  text-align:right;
+}
+
+.pairs {
+  overflow:auto;
+  width: 65%;
+  margin: 3em auto;
+  font-size: x-large; 
+}
+
+.righthand, .lefthand {
+  width: 40%; 
+  padding: 1em;
+}
+.lefthand {
+  text-align:right;
+  float:left;
+}
+
+.righthand {
+  float:right;
+  border-left: 2px solid black;
+}
+
+h1 { 
+  color: maroon;
+}
+h3 { 
+  color: black;
+}
+h1, h2, h3 { 
+  font-family: sans-serif;
+  text-align: center;
+}
+
+ol#outline {
+  font-size: x-large;
+}
+
+
+ol#outline li a   {
+  text-decoration: none;
