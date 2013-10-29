@@ -7,7 +7,29 @@
   <script type="text/javascript" src="js/translit.js"></script>
   <meta charset="UTF-8">
   <link type="text/css" href="../css/style.css" rel="stylesheet" />
-  <style type="text/css"> </style>
+  <style type="text/css"> 
+  #rules { 
+    float:left;
+    margin-right:2em;
+  }
+  .inputKey { 
+    border: 1px solid black;
+    display:inline-block;
+    height:1em;
+    width:1em;
+    border-radius: 4px;
+    background:white;
+    box-shadow: -2px 2px 2px #ccc ;
+    text-align:center;
+  }
+  .outputLetter { 
+    line-height:2;
+  }
+  dt { 
+    font-weight: bold;
+  }
+  </style>
+ 
 <script>
 $(function(){
  
@@ -42,9 +64,9 @@ $(function(){
 </head>
 <body id="transliterator">
 <div id="glosser">
-  <input tabindex="1" lang="ug" id="before"></input>
-  <input tabindex="3" lang="ug" id="after"></input>
-  <input tabindex="2" lang="en" id="gloss"></input>
+  <input placeholder=before tabindex="1" lang="ug" id="before"></input>
+  <input placeholder=after tabindex="3" lang="ug" id="after"></input>
+  <input placeholder=gloss tabindex="2" lang="en" id="gloss"></input>
 </div>
 
 <dl id="lines">
