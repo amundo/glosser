@@ -18,7 +18,7 @@ function transliterate(text, table){
 }
 
 function viewTable(table){
-  var htmltable = ['<table id="rules"><tr><th>type:</th><th>get:</th></tr>'];
+  var htmltable = ['<table id="rules"><tr><th>key</th><th>output</th></tr>'];
   $.each(table, function(i, [before, after]){
     htmltable.push("<tr><td class='inputKey'>"+before+"</td><td class='outputLetter'>"+after+"</td></tr>");
   })
